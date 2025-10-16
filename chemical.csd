@@ -16,25 +16,6 @@ vslider bounds(366, 40, 40, 90), channel("step13"), range(0, 127, 60, 1, 1)
 vslider bounds(396, 40, 40, 90), channel("step14"), range(0, 127, 60, 1, 1)
 vslider bounds(426, 40, 40, 90), channel("step15"), range(0, 127, 60, 1, 1)
 vslider bounds(456, 40, 40, 90), channel("step16"), range(0, 127, 60, 1, 1)
-
-
-vslider bounds(4, 240, 40, 90) channel("att")  range(0.001, .2, 0.01, 1,0.01)
-vslider bounds(36, 240, 40, 90) channel("dec") range(0.001, 1, 0.5, 1, 0.01)
-vslider bounds(66, 240, 40, 90) channel("sus") range(0.01, 1, 0.5, 1, 0.01)
-vslider bounds(96, 240, 40, 90) channel("rel") range(0.001, 1, .5, 1, 0.01)
-vslider bounds(126, 240, 40, 90) channel("kpa")  range(0, 10, 0, 1, 1)
-vslider bounds(156, 240, 40, 90) channel("kpb") range(0, 10, 0, 1, 1)
-vslider bounds(186, 240, 40, 90) channel("kpc") range(0, 10, 0, 1, 1)
-vslider bounds(216, 240, 40, 90) channel("kpd") range(0, 10, 0, 1, 1)
-vslider bounds(246, 240, 40, 90) channel("kfma")  range(0, 1, 0, 1, 0.01)
-vslider bounds(276, 240, 40, 90) channel("kfmb") range(0, 1, 0, 1, 0.01)
-vslider bounds(306, 240, 40, 90) channel("kfmc") range(0, 1, 0, 1, .01)
-vslider bounds(336, 240, 40, 90) channel("kfmd") range(0, 1, 0, 1, .01)
-vslider bounds(366, 240, 40, 90) channel("kalgo") range(0, 7, 0, 1, 1)
-vslider bounds(396, 240, 40, 90) channel("kfb") range(0, 1, 0., 1, 0.01)
-vslider bounds(426, 240, 40, 90) channel("gain1") range(0, .3, 0, 1, 0.001)
-
-
 checkbox bounds(14, 132, 22, 22) channel("g1")
 checkbox bounds(44, 132, 22, 22) channel("g2")
 checkbox bounds(74, 132, 22, 22) channel("g3")
@@ -55,12 +36,60 @@ checkbox bounds(464, 162, 22, 22) channel("startstop")
 button bounds(434, 162, 22, 22) channel("seed") text(" ")
 checkbox bounds(404, 162, 22, 22) channel("sync")
 checkbox bounds(374, 162, 22, 22) channel("trig_g")
-rslider bounds(10, 158, 60, 60) channel("tempo") range(20, 300, 0, 1, 1)
-rslider bounds(70, 158, 60, 60) channel("swing") range(0, .05, 0, 1, 0.001)
+rslider bounds(10, 158, 60, 60) channel("tempo") range(20, 300, 120, 1, 1)
+rslider bounds(70, 158, 60, 60) channel("swing") range(0, .016, 0, 1, 0.0001)
 rslider bounds(130, 158, 60, 60) channel("slide") range(0, 1, 0, 1, 0.001)
 rslider bounds(190, 158, 60, 60) channel("direction") range(0, 1, 0, 1,0.001)
 rslider bounds(250, 158, 60, 60) channel("div") range(1, 16, 4, 1, 1)
 rslider bounds(310, 158, 60, 60) channel("len") range(1, 16, 16, 1, 1)
+
+vslider bounds(4, 240, 40, 90) channel("att")  range(0.001, .2, 0.01, 1,0.01)
+vslider bounds(36, 240, 40, 90) channel("dec") range(0.001, 1, 0.5, 1, 0.01)
+vslider bounds(66, 240, 40, 90) channel("sus") range(0.01, 1, 0.5, 1, 0.01)
+vslider bounds(96, 240, 40, 90) channel("rel") range(0.001, 1, .5, 1, 0.01)
+vslider bounds(126, 240, 40, 90) channel("kpa")  range(0, 10, 1, 1, 1)
+vslider bounds(156, 240, 40, 90) channel("kpb") range(0, 10, 1, 1, 1)
+vslider bounds(186, 240, 40, 90) channel("kpc") range(0, 10, 1, 1, 1)
+vslider bounds(216, 240, 40, 90) channel("kpd") range(0, 10, 1, 1, 1)
+vslider bounds(246, 240, 40, 90) channel("kfma")  range(0, 1, 0.1, 1, 0.01)
+vslider bounds(276, 240, 40, 90) channel("kfmb") range(0, 1, 0.1, 1, 0.01)
+vslider bounds(306, 240, 40, 90) channel("kfmc") range(0, 1, 0.1, 1, .01)
+vslider bounds(336, 240, 40, 90) channel("kfmd") range(0, 1, 0.1, 1, .01)
+vslider bounds(366, 240, 40, 90) channel("kalgo") range(0, 7, 0, 1, 1)
+vslider bounds(396, 240, 40, 90) channel("kfb") range(0, .5, 0., 1, 0.01)
+vslider bounds(426, 240, 40, 90) channel("gain1") range(0, .3, 0.1, 1, 0.001)
+
+
+
+rslider bounds(10, 340, 60, 60) channel("kpitch") range(20, 300, 0, 1, 1)
+rslider bounds(70, 340, 60, 60) channel("swingb") range(0, 0.016, 0, 1, .0001)
+rslider bounds(130, 340, 60, 60) channel("kpamt") range(10, 300, 0, 1, 1)
+rslider bounds(190, 340, 60, 60) channel("kdecay") range(.001, .5, 0.1, 1, .001)
+rslider bounds(250, 340, 60, 60) channel("kshape") range(0, 1, 0, 1, .01)
+rslider bounds(310, 340, 60, 60) channel("lenk") range(1, 16, 16, 1, 1)
+rslider bounds(370, 340, 60, 60) channel("kdiv") range(1, 16, 4, 1, 1)
+rslider bounds(430, 340, 60, 60) channel("kgain") range(0, 1, 0.5, 1, .001)
+
+
+checkbox bounds(14, 420, 22, 22) channel("k1")
+checkbox bounds(44, 420, 22, 22) channel("k2")
+checkbox bounds(74, 420, 22, 22) channel("k3")
+checkbox bounds(104, 420, 22, 22) channel("k4")
+checkbox bounds(134, 420, 22, 22) channel("k5")
+checkbox bounds(164, 420, 22, 22) channel("k6")
+checkbox bounds(194, 420, 22, 22) channel("k7")
+checkbox bounds(224, 420, 22, 22) channel("k8")
+checkbox bounds(254, 420, 22, 22) channel("k9")
+checkbox bounds(284, 420, 22, 22) channel("k10")
+checkbox bounds(314, 420, 22, 22) channel("k11")
+checkbox bounds(344, 420, 22, 22) channel("k12")
+checkbox bounds(374, 420, 22, 22) channel("k13")
+checkbox bounds(404, 420, 22, 22) channel("k14")
+checkbox bounds(434, 420, 22, 22) channel("k15")
+checkbox bounds(464, 420, 22, 22) channel("k16")
+button bounds(434, 450, 22, 22) channel("kseed") text(" ")
+
+
 </Cabbage>
 
 <CsoundSynthesizer>
@@ -72,6 +101,83 @@ rslider bounds(310, 158, 60, 60) channel("len") range(1, 16, 16, 1, 1)
 ksmps = 32
 nchnls = 2
 0dbfs = 1
+
+opcode Map, k, kkkkk
+
+kin, kx1, kx2, ky1, ky2   xin    
+kcout init 0         ; read input parameters
+kout    =  ky1 + (kin-kx1)*(ky2-ky1)/(kx2-kx1)  
+ 
+        xout kout               ; write output
+
+endop
+///////////////////////////////////////////////////////
+opcode Comp, a, akkkk
+
+ain, kt, krat, ka, kre xin
+
+;  kthresh = -10.1
+;  kratio  = 20
+;  katt    = 0.1
+;  krel    = .01
+  kenv = 0
+  again = 0
+  aAbs abs ain
+  
+  if(k(aAbs) > kenv) then
+  
+  kenv = ka*(kenv-aAbs)+aAbs
+  
+  else
+  
+  kenv = kre*(kenv-aAbs)+aAbs
+  endif
+  
+  if(kenv < kt) then
+  again = 1
+  else
+  again = kt*(krat-1.)/(kenv-kt)+1.
+  endif
+  xout  ain * again
+  endop
+ ///////////////////////////////////////////////////////
+
+opcode StanyComp, aa, aaakkkkkiiii
+a1,a2, aout,kt, katt, kCD,ktype, krat,isig,isine,isqr,isaw   xin
+
+
+
+
+
+acompL  Comp a1, kt,krat, katt, katt+.2	
+acompR  Comp a2, kt,krat, katt, katt+.2	
+
+if(ktype ==0) then
+adisL distort acompL, 1, isig
+adisR distort acompR, 1, isig
+endif
+
+if(ktype ==1) then
+adisL distort acompL, 1, isine
+adisR distort acompR, 1, isine
+endif
+if(ktype ==2) then
+adisL distort acompL, 1, isqr
+adisR distort acompR, 1, isqr
+endif
+
+if(ktype ==3) then
+adisL distort acompL, 1, isaw
+adisR distort acompR, 1, isaw
+endif
+acomppL ntrpol a1, acompL,katt
+acomppR ntrpol a2, acompR,katt
+acomdL ntrpol acomppL, adisL,kCD
+acomdR ntrpol acomppR, adisR,kCD
+
+xout acomdL, acomdR
+endop
+///////////////////////////////////////////////////////
 opcode FMsynth, a,kkkkkkkkkkki
 kpitch,kpa,kpb,kpc,kpd, kfma,kfmb,kfmc,kfmd,kalgo,kfb,isine xin
 
@@ -191,6 +297,25 @@ endif
 
         xout acarrier
 endop
+//////////////////////////////////////////////////////////
+opcode gateHold, k, kkk
+kTrig, kGateCondition, kMinGateTime xin
+
+kGateTimer init 0
+
+if kTrig == 1 && kGateCondition == 1 then
+    kGateTimer = kMinGateTime
+    kg = 1
+elseif kGateTimer > 0 then
+    kGateTimer = kGateTimer - (ksmps/sr)
+    kg = 1
+else
+    kg = 0
+endif
+
+xout kg
+endop
+///////////////////////////////////////////////////////
 opcode myADSR, k, kkkkkk
 ; Args: kAttack(sec), kDecay(sec), kSustain(0..1), kRelease(sec), kGate, kReset
 kAttack, kDecay, kSustain, kRelease, kGate, kReset xin
@@ -250,13 +375,58 @@ endif
 
 kPrevGate = kGate
 xout kCurrentVal
+
+endop
+///////////////////////////////////////////////////////
+opcode Kick, a , kkkkkki
+kgate,kpitch, kpitchamt, kdecay, kshape,klenk, isine xin
+
+; Args: kAttack(sec), kDecay(sec), kSustain(0..1), kRelease(sec), kGate, kReset
+if klenk == 1 && kgate==1 then
+kenv = 1
+else
+kenv myADSR .001, kdecay, .001, kdecay, kgate,0
+endif
+
+kpE portk kenv, .001
+kenvmap Map kpE, 0 , 1, 20, kpitchamt
+asig poscil3  1,kpitch+kenvmap,isine
+asig = asig * kpE
+adis distort asig, 1, isine
+akik ntrpol asig, adis, kshape
+
+xout akik
+endop
+
+///////////////////////////////////////////////////////
+opcode phasorReset, k, kk
+kFreq, kReset xin
+
+if kReset == 1 then
+    reinit resetPhasor
+endif
+
+resetPhasor:
+kPhasorVal phasor kFreq
+rireturn
+
+xout kPhasorVal
 endop
 
 giSine ftgen 0, 0, 2^10, 10, 1
+giF	ftgen	2,0, 257, 9, .5,1,270 ;sigmoid
+gisquare ftgen 4, 0, 257, 10, 1, 0 , .33, 0, .2 , 0, .14, 0 , .11, 0, .09 ;odd harmonics
+gisaw    ftgen 5, 0, 16384, 10, 0, .2, 0, .4, 0, .6, 0, .8, 0, 1, 0, .8, 0, .6, 0, .4, 0,.2 ;even harmonics
+;rslider bounds(10, 340, 60, 60) channel("kpitch") range(30, 300, 0, 1, 1)
+;rslider bounds(70, 340, 60, 60) channel("kpamt") range(30, 300, 0, 1, 1)
+;rslider bounds(130, 340, 60, 60) channel("kdecay") range(30, 300, 0, 1, 1)
+;rslider bounds(190, 340, 60, 60) channel("kshape") range(30, 300, 0, 1, 1)
+;rslider bounds(250, 340, 60, 60) channel("kgain") range(30, 300, 0, 1, 1)
 gkc = 0
 instr 1
 kSteps[] init 16
 kGate[] init 16
+kGatek[] init 16
 kSteps[0] cabbageGetValue "step1"
 kSteps[1] cabbageGetValue "step2"
 kSteps[2] cabbageGetValue "step3"
@@ -289,13 +459,31 @@ kGate[12] cabbageGetValue "g13"
 kGate[13] cabbageGetValue "g14"
 kGate[14] cabbageGetValue "g15"
 kGate[15] cabbageGetValue "g16"
+kGatek[0] cabbageGetValue "k1"
+kGatek[1] cabbageGetValue "k2"
+kGatek[2] cabbageGetValue "k3"
+kGatek[3] cabbageGetValue "k4"
+kGatek[4] cabbageGetValue "k5"
+kGatek[5] cabbageGetValue "k6"
+kGatek[6] cabbageGetValue "k7"
+kGatek[7] cabbageGetValue "k8"
+kGatek[8] cabbageGetValue "k9"
+kGatek[9] cabbageGetValue "k10"
+kGatek[10] cabbageGetValue "k11"
+kGatek[11] cabbageGetValue "k12"
+kGatek[12] cabbageGetValue "k13"
+kGatek[13] cabbageGetValue "k14"
+kGatek[14] cabbageGetValue "k15"
+kGatek[15] cabbageGetValue "k16"
 ksync chnget "sync"
 ktemp chnget "tempo"
 khbpm chnget "HOST_BPM"
 kdiv chnget "div"
+
 kstart chnget "startstop"
 kswinga cabbageGetValue "swing"
 kseed cabbageGetValue "seed"
+kseedk cabbageGetValue "kseed"
 kAtt chnget "att"
 kDec chnget "dec"
 kSus chnget "sus"
@@ -314,6 +502,16 @@ kgainA cabbageGetValue "gain1"
 ktg chnget "trig_g"
 klen chnget "len"
 
+
+kpitchk chnget "kpitch"
+kswingb cabbageGetValue "swingb"
+kpamt chnget "kpamt"
+kdecay chnget "kdecay"
+kshape chnget "kshape"
+klenk chnget "lenk"
+kkdiv chnget "kdiv"
+kgainB chnget "kgain"
+
 if ksync == 1 then
     ktempo = khbpm
 else
@@ -322,38 +520,55 @@ endif
 
 if kstart == 1 then
     kfloor round kdiv
+    kkfloor round kkdiv
+    
+
+    kdivChanged changed kdiv
+    kkdivChanged changed kkdiv
+    kDivSync = kdivChanged + kkdivChanged
+    
     kt = ktempo/(60*kfloor)
-    kphasor phasor kt
-    kswinglfo lfo 1, kt*4, 1
-    kswinglfo=-kswinglfo
-    kswingo = kswinglfo * kswinga
-    kswingphasor = kphasor + kswingo
-    kswingphasor = kswingphasor - int(kswingphasor)
-
-    kstep = int(kswingphasor*16%klen)
-
-
-kTrig changed kstep
-kt32 = kt/8             ; duration of a 32nd note if kt is step length
-knext = (kstep + 1) % 16
-
-
-    kMinGateTime = 0.05  ; minimum 50ms gate time
-    kGateTimer init 0
-    if kTrig == 1 && kGate[kstep] == 1 then
-        kGateTimer = kMinGateTime
-        kg = 1
-    elseif kGateTimer > 0 then
-        kGateTimer = kGateTimer - (ksmps/sr)
-        kg = 1
-    else
-        kg = 0
-    endif
-
-    ks mtof kSteps[kstep]
-else kg = 0
+    kkt = ktempo/(60*kkfloor)
+    
+    ; Reset both phasors when either division changes
+if kDivSync > 0 then
+    kResetTrig = 1
+else
+    kResetTrig = 0
 endif
 
+kphasor phasorReset kt, kResetTrig, 0
+kkphasor phasorReset kkt, kResetTrig, 0
+    ; Rest of your swing code...
+    kswinglfo lfo 1, kt*4, 1
+    kswinglfob lfo 1, kt*4, 1
+    kswinglfo=-kswinglfo
+    kswinglfob=-kswinglfob
+    kswingo = kswinglfo * kswinga
+    kswingob = kswinglfob * kswingb
+    kswingphasor = kphasor + kswingo
+    kswingphasorb = kkphasor + kswingob
+    kswingphasor = kswingphasor - int(kswingphasor)
+    kswingphasorb = kswingphasorb - int(kswingphasorb)
+    kstep = int(kswingphasor*16) % klen
+    kstepk = int(kswingphasorb*16) % klenk
+
+if klen == 1 then
+kTrig = 1
+else
+kTrig changed kstep
+endif
+
+if klenk == 1 then
+kTrigk = 1
+else
+kTrigk changed kstepk
+endif
+kg gateHold kTrig, kGate[kstep], 0.05
+kgk gateHold kTrigk, kGatek[kstepk], 0.05
+
+ks mtof kSteps[kstep]
+endif
 ki = 0
  kc changed kseed
 if kc == 1 then
@@ -370,12 +585,36 @@ if kc == 1 then
     od
 
 endif
+kik = 0
+ kck changed kseedk
+if kck == 1 then
+    while kik < 16 do
+        kik = kik + 1
+                 
+   
+        Sgstr sprintfk "k%d", kik   
+    
+        kgrand random 0, 1
+       
+        cabbageSetValue Sgstr, round(kgrand), kck
+    od
+
+endif
+
+
+;a1,a2, aout, katt, kCD,ktype, khelix,isig,isine,isqr,isaw   xin
+;aCl, aCr StanyComp aFl,aFr, aout,kthr, katt,kCD,ktype,khelix,giF,gisine,gisquare,gisaw
 
 
 kEnv myADSR kAtt, kDec, kSus, kRel, kg, 0
 kpE portk kEnv, .001
-afmSynth FMsynth ks,kpa,kpb,kpc,kpd,kfma,kfmb,kfmc,kfmd,kalgo,kfb,giSine
-outs afmSynth*kpE*kgainA, afmSynth*kpE*kgainA
+afmSynth FMsynth ks,portk(kpa,.01),portk(kpb,.01),portk(kpc,.01),portk(kpd,.01),portk(kfma,.01),portk(kfmb,.01),portk(kfmc,.01),portk(kfmd,.01),kalgo,kfb,giSine
+;kgate,kpitch, kpitchamt, kdecay, kshape, isine xin
+
+akick Kick  kgk, kpitchk, kpamt, kdecay, kshape,klenk, giSine 
+avoice =(afmSynth*kpE*portk(kgainA,.01))
+akick = akick *portk(kgainB,.01)
+outs avoice + akick , avoice + akick 
 
 endin
 </CsInstruments>
